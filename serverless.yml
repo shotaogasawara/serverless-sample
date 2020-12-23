@@ -36,7 +36,7 @@ functions:
       include:
         - 'ruby/src/ls_buckets.rb'
   HelloGo:
-    handler: 'go/src/hello.handler'
+    handler: 'go/bin/hello'
     runtime: go1.x
     package:
       include:
