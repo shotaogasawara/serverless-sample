@@ -11,10 +11,10 @@
     "package": "serverless package -v",
     "invoke": "serverless invoke -v",
     "remove": "serverless remove -v",
-    "deploy": "serverless deploy -v",
-    "build-all": "run-s build:*",
     "build:ruby": "cd ruby; rm -rf vendor/bundle; bundle install --with=staging,production --path=vendor/bundle",
-    "build:go": "cd go; make build"
+    "build:go": "cd go; make build",
+    "build-all": "run-s build:*",
+    "deploy": "serverless deploy -v"
   },
   "engines": {
     "node": "15.4.0",
